@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+
+h2,
+h3 {
+    color: #db6400;
+}
+
+p {
+    text-indent: 2em;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+#letter-spacing {
+    letter-spacing: 4px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 #214252;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 50px;
+    background: url(image/mejid.jpg);
+    background-color: #214252;
+    opacity: 80%;
+    background-size: cover;
+    text-align: center;
+    color: black;
+    box-sizing: 200px;
+}
+
+/*bagian NAvbar*/
+nav {
+    background-color: transparent;
+    padding: 3px;
+    top: 0;
+    text-align: left;
+    position: absolute;
+
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #0e918c;
+
+}
+
+nav ul li a:hover {
+    font-weight: bold;
+    color: #f1e189;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+
+}
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+.content {
+    float: left;
+    width: 72%;
+}
+
+aside {
+    float: right;
+    width: 28%;
+    padding: 10px;
+}
+
+.fitur-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform .2s;
+    border-radius: 3px;
+}
+
+.fitur-image:hover {
+    transform: scale(1.1);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.ignielToTop {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    cursor: pointer;
+    border-radius: 100px;
+    transition: all .5s;
+    background: #008c5f url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.ignielToTop:hover {
+    background: #1d2129 url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center center;
+}
+
+.profile {
+    text-align: center;
+}
+
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0e918c;
+    color: black;
+    text-align: center;
+    padding: 1px;
+}
+
+/* responsive */
+@media screen and (max-width: 1000px) {
+
+    .content,
+    aside {
+        width: 100%;
+
+    }
+
+}
